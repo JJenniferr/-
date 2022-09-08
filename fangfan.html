@@ -1,0 +1,198 @@
+<html><head>
+<meta charset="utf-8">
+<title>防范方法</title>
+<link rel="stylesheet" href="yy.css" type=""> 
+<style>
+body{
+	background:url("res/bg1.png") center no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+.test1{
+	margin-bottom: 10px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	width: 400px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.85);
+	border-radius: 1rem;
+}
+	
+.test2{
+	margin-bottom: 10px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	width: 400px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.85);
+	border-radius: 1rem;
+}
+.test3{
+	margin-bottom: 10px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	width: 400px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.85);
+	border-radius: 1rem;
+}
+.image1{
+				  width: 7%;
+				  position: absolute;
+				  left: 3%;
+				  top: 85%;
+			}
+.image2{
+				  width: 7%;
+				  position: absolute;
+				  left: 12%;
+				  top: 85%;
+			}
+</style>
+
+
+<script type="text/javascript">
+	
+
+
+	var result1='C';
+	var result2='A';
+	var result3='B';
+
+
+	function check1(){
+		var obj = document.getElementsByName("practise");
+		var list = document.getElementsByClassName("test1")[0];
+    		for(var i=0; i<obj.length; i++){
+        		if(obj[i].checked){
+					if(obj[i].value==result1)
+            			list.getElementsByClassName("res1")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res1")[0].innerHTML = "<h3>回答错误！</h3><h4>&nbsp;&nbsp;&nbsp;&nbsp;正确的答案应该是C选项。</h4>";
+					}
+    		}				
+	}
+
+	function check2(){
+		var obj = document.getElementsByName("practise");
+		var list = document.getElementsByClassName("test2")[0];
+    		for(var i=0; i<obj.length; i++){
+        		if(obj[i].checked){
+					if(obj[i].value==result2)
+            			list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答错误！</h3><h4>&nbsp;&nbsp;&nbsp;&nbsp;正确的答案应该是A选项，大学生还应提高个人信息保护意识，保管好自己的身份证号、银行卡号、手机号以及验证码等重要信息，不扫描不明来源的二维码，也不轻易向他人透露家庭住址、宿舍地址、父母联系电话等信息，以免被骗子所利用。</h4>";
+					}
+    		}				
+	}
+
+	function check3(){
+		var obj = document.getElementsByName("practise");
+		var list = document.getElementsByClassName("test3")[0];
+    		for(var i=0; i<obj.length; i++){
+        		if(obj[i].checked){
+					if(obj[i].value==result3)
+            			list.getElementsByClassName("res3")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res3")[0].innerHTML = "<h3>回答错误！</h3><h4>&nbsp;&nbsp;&nbsp;&nbsp;正确的答案应该是B选项,大学生还应提高个人信息保护意识，保管好自己的身份证号、银行卡号、手机号以及验证码等重要信息，不扫描不明来源的二维码，也不轻易向他人透露家庭住址、宿舍地址、父母联系电话等信息，以免被骗子所利用。</h4>";
+					}
+    		}				
+	}
+
+
+
+	function show1(){
+
+
+        document.getElementsByClassName("test1")[0].style.display="block";
+        document.getElementsByClassName("test2")[0].style.display="none";
+        document.getElementsByClassName("test3")[0].style.display="none";
+	}
+
+	function show2(){
+        document.getElementsByClassName("test2")[0].style.display="block";
+        document.getElementsByClassName("test1")[0].style.display="none";
+        document.getElementsByClassName("test3")[0].style.display="none";
+
+	}
+
+	function show3(){
+        document.getElementsByClassName("test3")[0].style.display="block";
+        document.getElementsByClassName("test1")[0].style.display="none";
+        document.getElementsByClassName("test2")[0].style.display="none";
+
+	}
+
+
+</script>	  
+</head>
+<body>
+    <div class="Page_content">
+		<div class="Content1">
+			<div id="small_test">
+				<div class="test1">
+					<form>
+						<br>
+						<h3>1.小A在淘宝购物，商家发了一条非淘宝的商品链接让其拍下，小A应该怎么做？（ ）</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;点击链接</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;直接付款</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;拒绝付款</h4>
+						<h4><input type="button" class="butt3" onclick="check1()" value="提交"></h4>
+					</form>
+					<div class="res1"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show2()"><h4>下一题</h4></li>
+						</ul>
+					</div>
+    			</div>
+
+
+    			<div class="test2" style="display:none;">
+					<form>
+						<br>
+						<h3>2.“您好，由于快递员疏忽，您的快递在运送途中丢失，我们将赔偿你2倍损失，点击以下链接填写个人信息。”接到类似电话，你应该怎么做？( )</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;联系官方客服查询快递信息</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;点击链接</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;填写个人信息</h4>
+						<h4><input type="button" class="butt3" onclick="check2()" value="提交"></h4>
+					</form>
+					<div class="res2"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show1()"><h4>上一题</h4></li>
+							<li onclick="show3()"><h4>下一题</h4></li>
+						</ul>
+					</div>
+    			</div>
+
+
+    			<div class="test3" style="display:none;">
+					<form>
+						<br>
+						<h3>3.小黄网络支付时，突然跳出不明弹窗要求验证本人身份信息,小黄应该怎么做？（ ）</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;立即点击弹窗</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;报警咨询</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;按要求认真填写</h4>
+						<h4><input type="button" class="butt3" onclick="check3()" value="提交"></h4>
+					</form>
+					<div class="res3"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show2()"><h4>上一题</h4></li>
+						</ul>
+					</div>
+    			</div>
+   			
+			</div>
+		</div>
+	</div>
+<div>
+			  <a href="weiqvan.html" ><img class="image1" src="res/fanhui.png"/></ a>
+			  <a href="jieshu.html" ><img class="image2" src="res/xiayibu.png"/></ a>
+</div>
+ 
+</body></html>
